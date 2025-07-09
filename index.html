@@ -152,6 +152,53 @@
   transform: scale(1.1);
 }
 
+.contact-card {
+  background-color: #ffecb3;
+  border: 2px solid #d32f2f;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.location-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.location-text {
+  flex: 1 1 300px;
+  text-align: center;
+  color: #b71c1c;
+  font-size: 18px;
+}
+
+.location-text h2 {
+  margin-bottom: 10px;
+  color: #d32f2f;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d32f2f;
+  text-decoration: underline;
+}
+
+.qr-block {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.qr-image {
+  width: 140px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 
   </style>
 </head>
@@ -212,17 +259,21 @@
 </section>
 
 
-  <section id="contact" class="contact-section">
-    <h2>Visit Us</h2>
-    <p class="contact-info">Near 2nd Railway Gate, Tilakwadi, Belgaum</p>
-    <p class="contact-info">📞 Call: <a href="tel:+916363719353">+91 6363719353</a></p>
-<a href="https://g.co/kgs/cZyZ14t" target="_blank">
-   View Paramveer Coaching Centre on Google Maps
-</a>
+<section id="contact" class="contact-card">
+  <div class="location-flex">
+    <div class="location-text">
+      <h2>📍 Visit Us</h2>
+      <p>Near 2nd Railway Gate,<br>Tilakwadi, Belgaum</p>
+      <p>📞 <a href="tel:+916363719353">+91 6363719353</a></p>
+      <a href="https://goo.gl/maps/iu1Gt62vgrEm1Hqs6" target="_blank" class="map-link">🔗 View on Google Maps</a>
+    </div>
+    <div class="qr-block">
+      <p>📱 Scan for Location</p>
+      <img src="qr-code.png" alt="QR Code" class="qr-image">
+    </div>
+  </div>
+</section>
 
-    <p class="contact-info">📍 Scan QR Code for Google Maps Location</p>
-    <img src="qr-code.png" alt="QR Code" width="100">
-  </section>
 
   <footer id="socials">
     <p>Follow Us:</p>
